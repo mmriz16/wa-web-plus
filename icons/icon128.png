@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#bgGradient)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- WhatsApp-like chat bubble -->
+  <path d="M32 45 C32 38, 38 32, 45 32 L83 32 C90 32, 96 38, 96 45 L96 65 C96 72, 90 78, 83 78 L55 78 L40 88 L40 78 C35 78, 32 75, 32 70 Z" 
+        fill="url(#iconGradient)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  
+  <!-- Privacy/Hide symbol (eye with slash) -->
+  <g transform="translate(64, 55)">
+    <!-- Eye shape -->
+    <ellipse cx="0" cy="0" rx="16" ry="8" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="rgba(255,255,255,0.8)"/>
+    
+    <!-- Slash line -->
+    <line x1="-20" y1="-12" x2="20" y2="12" stroke="rgba(255,255,255,0.9)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Plus symbol in corner -->
+  <g transform="translate(90, 38)">
+    <circle cx="0" cy="0" r="12" fill="rgba(255,255,255,0.9)"/>
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#667eea" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#667eea" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Decorative dots -->
+  <circle cx="45" cy="95" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="55" cy="98" r="1.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="75" cy="95" r="1" fill="rgba(255,255,255,0.5)"/>
+</svg>
