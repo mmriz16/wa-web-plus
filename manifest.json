@@ -39,7 +39,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["styles/hide.css"],
+      "resources": ["icons/icon128.png"],
       "matches": ["https://web.whatsapp.com/*"]
     }
   ]
