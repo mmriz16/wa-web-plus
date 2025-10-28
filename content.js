@@ -87,6 +87,26 @@ function applyBlurStyles() {
       transition: filter 0.3s ease !important;
     }
     
+    /* Blur message previews in chat list - comprehensive selectors */
+    [data-testid="last-msg"],
+    [data-testid="last-msg"] span,
+    [data-testid="last-msg"] div,
+    .x1iyjqo2.x6ikm8r.x10wlt62,
+    .gfz4du6o.r7fjleex.lhj4utae,
+    [data-testid="cell-frame-container"] [data-testid="last-msg-status"] + span,
+    [data-testid="cell-frame-container"] span:not([data-testid]):not([title]):not([dir="auto"]),
+    [data-testid="cell-frame-container"] div:not([data-testid]):not([class*="avatar"]) span,
+    [role="gridcell"] span:not([title]):not([dir="auto"]),
+    [data-testid="cell-frame-container"] span[class*="x1jchvi3"],
+    [data-testid="cell-frame-container"] span[class*="x193iq5w"],
+    [data-testid="cell-frame-container"] > div > div:last-child span:not([dir="auto"]),
+    [data-testid="cell-frame-container"] > div > div:last-child div span {
+      filter: blur(6px) !important;
+      transition: filter 0.3s ease !important;
+      border-radius: 3px !important;
+      padding: 1px 3px !important;
+    }
+    
     /* Blur contact names in conversation header */
     [data-testid="conversation-header"] span[dir="auto"],
     header span[dir="auto"]:not(:empty),
@@ -100,7 +120,21 @@ function applyBlurStyles() {
     [role="gridcell"]:hover span[title]:not([title=""]),
     div[data-testid="cell-frame-title"]:hover span,
     div[class*="chat-title"]:hover span,
-    span[class*="ggj6brxn"]:hover {
+    span[class*="ggj6brxn"]:hover,
+    /* Remove blur on hover for message previews */
+    [data-testid="cell-frame-container"]:hover [data-testid="last-msg"],
+    [data-testid="cell-frame-container"]:hover [data-testid="last-msg"] span,
+    [data-testid="cell-frame-container"]:hover [data-testid="last-msg"] div,
+    [data-testid="cell-frame-container"]:hover .x1iyjqo2.x6ikm8r.x10wlt62,
+    [data-testid="cell-frame-container"]:hover .gfz4du6o.r7fjleex.lhj4utae,
+    [data-testid="cell-frame-container"]:hover [data-testid="last-msg-status"] + span,
+    [data-testid="cell-frame-container"]:hover span:not([data-testid]):not([title]):not([dir="auto"]),
+    [data-testid="cell-frame-container"]:hover div:not([data-testid]):not([class*="avatar"]) span,
+    [role="gridcell"]:hover span:not([title]):not([dir="auto"]),
+    [data-testid="cell-frame-container"]:hover span[class*="x1jchvi3"],
+    [data-testid="cell-frame-container"]:hover span[class*="x193iq5w"],
+    [data-testid="cell-frame-container"]:hover > div > div:last-child span:not([dir="auto"]),
+    [data-testid="cell-frame-container"]:hover > div > div:last-child div span {
       filter: blur(0px) !important;
     }
     
